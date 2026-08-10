@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>家計簿アプリ</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>家計簿アプリ</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>日付</th>
+        <th>カテゴリ</th>
+        <th>内容</th>
+        <th>金額</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for expense in expenses %}
+      <tr>
+        <td>{{ expense.date }}</td>
+        <td>{{ expense.category }}</td>
+        <td>{{ expense.item }}</td>
+        <td>{{ expense.amount }}円</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>

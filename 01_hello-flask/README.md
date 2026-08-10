@@ -2,7 +2,27 @@
 
 「Pythonで学ぶ 家計簿アプリ開発」第1回のコード。
 
+## app.py
+
+```python
+from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route("/")
+def index():
+    return "Hello, PC-LABO!"
+```
+
 Flaskの最小構成で、ブラウザに「Hello, PC-LABO!」を表示するだけのアプリ。
+
+## フォルダ構成
+
+```
+01_hello-flask/
+└── app.py
+```
 
 ## 動かし方
 
