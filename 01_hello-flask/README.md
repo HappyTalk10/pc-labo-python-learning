@@ -7,6 +7,7 @@ Flaskの最小構成で、ブラウザに「Hello, PC-LABO!」を表示するだ
 ## 動かし方
 
 ```bash
+cd 01_hello-flask
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
