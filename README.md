@@ -10,7 +10,7 @@ Python（Flask）を使い、家計簿アプリを1回ごとに1機能ずつ作�
 |---|---|---|---|
 | 第1回 | [`01_hello-flask`](./01_hello-flask) | Flask環境構築とHello Flask | 公開 |
 | 第2回 | [`02_templates`](./02_templates) | Jinja2テンプレートで支出一覧を表示する | 公開  |
-| 第3回 | `03_add-delete-expense` | フォームによる支出の追加・削除 | 準備中 |
+| 第3回 | [`03_add-delete-expense`](./03_add-delete-expense)| フォームによる支出の追加・削除 | 公開 |
 | 第4回 | `04_sqlite` | SQLiteによるデータ永続化 | 準備中 |
 | 第5回 | `05_summary` | 月別集計・グラフ表示 | 準備中 |
 | 第6回 | `06_deploy-render` | Renderへのデプロイ | 準備中 |
@@ -26,7 +26,7 @@ Python（Flask）を使い、家計簿アプリを1回ごとに1機能ずつ作�
 
 各回のフォルダに、その回専用の`README.md`と`requirements.txt`を用意している。動かし方は各フォルダのREADMEを参照。
 
-## 関連
+## 関連ブログ記事
 
 - ブログ「PC-LABO」：<https://pc-labo.online/>
 - カテゴリ「GitHubでつくって学ぶ」：<https://pc-labo.online/category/learn-by-building-on-github/>
