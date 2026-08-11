@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>家計簿アプリ</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>家計簿アプリ</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>日付</th>
+        <th>カテゴリ</th>
+        <th>内容</th>
+        <th>金額</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for expense in expenses %}
+      <tr>
+        <td>{{ expense.date }}</td>
+        <td>{{ expense.category }}</td>
+        <td>{{ expense.item }}</td>
+        <td>{{ expense.amount }}円</td>
+        <td>
+          <form action="{{ url_for('delete', index=loop.index0) }}" method="post">
+            <button type="submit">削除</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h2>支出を追加する</h2>
+  <form action="{{ url_for('add') }}" method="post">
+    <label>日付 <input type="date" name="date" required></label>
+    <label>カテゴリ <input type="text" name="category" required></label>
+    <label>内容 <input type="text" name="item" required></label>
+    <label>金額 <input type="number" name="amount" required></label>
+    <button type="submit">追加</button>
+  </form>
+</body>
+</html>
