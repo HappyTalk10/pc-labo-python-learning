@@ -8,12 +8,12 @@ Python（Flask）を使い、家計簿アプリを1回ごとに1機能ずつ作�
 
 | 回 | フォルダ | 内容 | 記事 |
 |---|---|---|---|
-| 第1回 | [`01_hello-flask`](./01_hello-flask) | Flask環境構築とHello Flask | 公開中 |
-| 第2回 | [`02_templates`](./02_templates) | Jinja2テンプレートで支出一覧を表示する | 公開中 |
-| 第3回 | [`03_add-delete-expense`](./03_add-delete-expense) | フォームによる支出の追加・削除 | 公開中 |
-| 第4回 | [`04_sqlite`](./04_sqlite) | SQLiteによるデータ永続化 | 公開中 |
-| 第5回 | [`05_summary`](./05_summary) | 月別集計・グラフ表示 | 公開中 |
-| 第6回 | [`06_deploy-render`](./06_deploy-render) | Renderへのデプロイ | 公開中 |
+| 第1回 | [`01_hello-flask`](./01_hello-flask) | Flask環境構築とHello Flask | [公開中](https://pc-labo.online/2026/08/10/learning-household-account-book-app-development-with-python-part-1/) |
+| 第2回 | [`02_templates`](./02_templates) | Jinja2テンプレートで支出一覧を表示する | [公開中](https://pc-labo.online/2026/08/11/learning-household-account-book-app-development-with-python-part-2/) |
+| 第3回 | [`03_add-delete-expense`](./03_add-delete-expense) | フォームによる支出の追加・削除 | [公開中](https://pc-labo.online/2026/08/12/learning-household-account-book-app-development-with-python-part-3/) |
+| 第4回 | [`04_sqlite`](./04_sqlite) | SQLiteによるデータ永続化 | [公開中](https://pc-labo.online/2026/09/12/learning-household-account-book-app-development-with-python-part-4/) |
+| 第5回 | [`05_summary`](./05_summary) | 月別集計・グラフ表示 | [公開中](https://pc-labo.online/2026/09/13/learning-household-account-book-app-development-with-python-part-5/) |
+| 第6回 | [`06_deploy-render`](./06_deploy-render) | Renderへのデプロイ | [公開中](https://pc-labo.online/2026/09/19/learning-household-account-book-app-development-with-python-part-6/) |
 
 ## 技術スタック
 
