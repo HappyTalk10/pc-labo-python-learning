@@ -13,7 +13,7 @@ Python（Flask）を使い、家計簿アプリを1回ごとに1機能ずつ作�
 | 第3回 | [`03_add-delete-expense`](./03_add-delete-expense) | フォームによる支出の追加・削除 | 公開中 |
 | 第4回 | [`04_sqlite`](./04_sqlite) | SQLiteによるデータ永続化 | 公開中 |
 | 第5回 | [`05_summary`](./05_summary) | 月別集計・グラフ表示 | 公開中 |
-| 第6回 | [`06_deploy-render`](./06_deploy-render) | Renderへのデプロイ | 準備中 |
+| 第6回 | [`06_deploy-render`](./06_deploy-render) | Renderへのデプロイ | 公開中 |
 
 ## 技術スタック
 
