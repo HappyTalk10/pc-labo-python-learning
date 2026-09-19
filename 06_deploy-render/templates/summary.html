@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>集計 - 家計簿アプリ</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>集計</h1>
+  <p><a href="{{ url_for('index') }}">一覧に戻る</a></p>
+
+  <h2>月別合計</h2>
+  <canvas id="monthlyChart" width="600" height="300"></canvas>
+
+  <h2>カテゴリ別合計</h2>
+  <canvas id="categoryChart" width="400" height="400"></canvas>
+
+  <script>
+    const monthlyLabels = {{ monthly | map(attribute='month') | list | tojson }};
+    const monthlyTotals = {{ monthly | map(attribute='total') | list | tojson }};
+
+    const categoryLabels = {{ by_category | map(attribute='category') | list | tojson }};
+    const categoryTotals = {{ by_category | map(attribute='total') | list | tojson }};
+
+    new Chart(document.getElementById("monthlyChart"), {
+      type: "bar",
+      data: {
+        labels: monthlyLabels,
+        datasets: [{
+          label: "月別合計（円）",
+          data: monthlyTotals
+        }]
+      },
+      options: {
+        responsive: false
+      }
+    });
+
+    new Chart(document.getElementById("categoryChart"), {
+      type: "pie",
+      data: {
+        labels: categoryLabels,
+        datasets: [{
+          data: categoryTotals
+        }]
+      },
+      options: {
+        responsive: false
+      }
+    });
+  </script>
+</body>
+</html>
